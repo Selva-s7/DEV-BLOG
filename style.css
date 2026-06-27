@@ -84,6 +84,7 @@
 .hero .heading
 {
     font-size:clamp(2.5rem,5vw,4rem);
+    margin-bottom: 10px;
 }
 .hero .subheading
 {
@@ -277,6 +278,191 @@
     font-size: 0.85rem;
     color: #94a3b8;
     margin-bottom: 0.5rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.1em; 
+}
+.blog-hero
+{
+    min-height:500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:linear-gradient(135deg,#4169E1 0%,#191970 100%);
+    justify-content:center;
+}
+.blog-hero .heading
+{
+    color:white;
+    font-size: clamp(2.5rem,5vw,4rem);
+    margin-bottom: 10px;
+}
+.blog-hero .subheading
+{
+    color:white;
+    font-size:clamp(1.5rem,2vw,2rem);
+}
+.blogpage-cardsection
+{  
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top:10px;
+    gap:2rem;
+  
+}
+.blogpage-cardsection .blogpage-card1,.blogpage-cardsection .blogpage-card2,.blogpage-cardsection .blogpage-card3
+{   position: relative;
+     background:var(--card-bg);
+    min-width: 200px;
+        color:var(--card-text);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0.5rem;
+     padding:2rem 0;
+     align-items: center; 
+}
+.blogpage-cardsection .blogpage-card1 ul,.blogpage-cardsection .blogpage-card2 ul,.blogpage-cardsection .blogpage-card3 ul
+{   
+    list-style: none;
+    gap:2rem;
+}
+.blogpage-cardsection .blogpage-card1::before
+{   content: "HTML";
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0.5rem 0.2rem;
+    color:rgb(47, 47, 223);
+    border-radius: 12px;
+    background-color: white;
+}
+.blogpage-cardsection .blogpage-card2::before
+{   content: "CSS";
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0.5rem 0.2rem;
+    color:rgb(47, 47, 223);
+    border-radius: 12px;
+    background-color: white;
+}
+.blogpage-cardsection .blogpage-card3::before
+{   content: "JAVASCRIPT";
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0.5rem 0.2rem;
+    color:rgb(47, 47, 223);
+    border-radius: 12px;
+    background-color: white;
+}
+@media (max-width:768px)
+{
+    .blogpage-cardsection
+    {
+        grid-template-columns: 1fr;
+    }
+}
+.blogpage-cardsection .blogpage-card1 h3,.blogpage-cardsection .blogpage-card2 h3,.blogpage-cardsection .blogpage-card3 h3
+{
+    color:white;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+.projectpage-card
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 2rem 1rem;
+  
+}
+.projectpage-card .pcard 
+{
+    display: flex;
+    flex-direction: column;
+    gap:0.2rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.1rem;
     
+}
+.projectpage-card .pcard h4 
+{
+    color:white;
+    font-weight: 800;
+    margin-bottom: 5px;
+    
+}
+.projectpage-card .pcard p 
+{
+    color:white;
+    font-weight: 600;
+    text-align: center;
+    
+}
+.projectpage-card .pcard a
+{
+    text-decoration: none;
+    padding: 0.5rem 0.2rem;
+    background-color: white;
+    border-radius: 12px;
+    color: #3069b8;
+}
+.projectpage-card .pcard .pcard-tags
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:0.5rem;
+    margin-bottom: 10px;
+}
+.projectpage-card .pcard .pcard-tags .ptagsrow
+{
+    color:blue;
+    background-color: white;
+    border-radius:12px ;
+    padding: 0.2rem 0.6rem;
+}
+.projectpage-card .house
+{
+    position: relative;
+}
+.projectpage-card .house::before
+{   position: absolute;
+    content: "coming soon";
+    color:blue;
+    background-color: white;
+    top: 0;
+    left: 0;
+    padding: 0.2rem 0.25rem;
+    border-radius: 12px;
+}
+.stack
+{
+    
+    background: linear-gradient(135deg,#4169E1 0%,#191970 100%);
+    min-height: 500px;
+
+}
+.stack .stack-head
+{   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: clamp(2rem,5vw,5rem);
+    color: white;
+    
+}
+.stack .stack-skills
+{  
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+.stack .stack-skills .skills 
+{   display: inline-block;
+    color: blue;
+  width: fit-content;
+    background-color: white;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+   
 }
