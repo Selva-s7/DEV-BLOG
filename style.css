@@ -466,3 +466,50 @@
     border-radius: 12px;
    
 }
+.roadmap
+{
+    background:linear-gradient(135deg,#1f89db 0%,#0404cb 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.roadmap .month
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.roadmap .month h4
+{
+    color: white;
+    font-size: 1.5rem;
+}
+.goal
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem ;
+}
+.goal .goal-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.goal .goallist
+{
+    color: white;
+    
+}
+.goal .goallist ul li
+{   
+    margin-top: 10px;
+    list-style: none;
+    
+    
+}
