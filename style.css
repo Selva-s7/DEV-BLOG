@@ -436,12 +436,28 @@
     padding: 0.2rem 0.25rem;
     border-radius: 12px;
 }
+.about-intro {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 2rem;
+  background: #0f172a;
+  color: white;
+}
+
+.about-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #3b82f6;
+}
 .stack
 {
     
     background: linear-gradient(135deg,#4169E1 0%,#191970 100%);
     min-height: 500px;
-
+    padding: 2rem;
 }
 .stack .stack-head
 {   display: flex;
@@ -454,8 +470,10 @@
 }
 .stack .stack-skills
 {  
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
+     display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  padding: 1.5rem 2rem;
 }
 .stack .stack-skills .skills 
 {   display: inline-block;
@@ -470,41 +488,56 @@
 {
     background:linear-gradient(135deg,#1f89db 0%,#0404cb 100%);
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.roadmap .month
-{
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+   gap:2rem;
 }
+
 .roadmap .month h4
-{
+{   padding-left: 3rem;
+  border-left: 2px solid #3b82f6;
     color: white;
     font-size: 1.5rem;
 }
+.roadmap .month
+{  
+    position: relative;
+    align-items: flex-start;
+}
+.roadmap .month::before
+{
+   
+    content: "";
+  position: absolute;
+  left: -3.4rem;
+  top: 0.3rem;
+  width: 12px;
+  height: 12px;
+  background: #3b82f6;
+  border-radius: 50%;
+}
 .goal
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem ;
+    text-align:center;
+    padding:2rem;
+    background:linear-gradient(135deg,blue 0%,blue 100%);
 }
-.goal .goal-content
+.goal .goal-content h4
 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    color:white;
+    margin-bottom:10px;
+    font-size:1.5rem;
+    font-weight:800;
+}
+.goal .goal-content  p
+{
+    color:white;
+    font-size:1.2rem;
+    font-weight:600;
 }
 .goal .goallist
 {
-    color: white;
-    
+    color:white;
+    padding:1rem 0.5rem;
 }
 .goal .goallist ul li
 {   
